@@ -73,7 +73,7 @@ public class GerGraph {
                         }
                     }
                 }else if(aux == '.'){
-                     nextAux = chars[i+1];
+                    nextAux = chars[i+1];
                     if(nextAux != '#' && nextAux != ' '){
                         graph.addEdge(ver,ver+1);
                     }
