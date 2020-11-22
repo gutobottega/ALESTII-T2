@@ -35,6 +35,10 @@ public class CaminhamentoLargura {
                     distTo[w] = distTo[v] + 1; // dist. ao vizinho é esta + 1
                     q.add(w);
                 }
+                    else if (distTo[w] > distTo[v]+1 ){
+                    distTo[w] = distTo[v]+1;
+                    q.add(w);
+                    }
             }
         }
     }
