@@ -36,8 +36,7 @@ public class GerGraph {
                 if(aux != '.' && aux != '#'){
                     outside.put(aux, i);
                 }
-            }
-            if(aux == '.'){
+            }else if(aux == '.'){
                 if(chars[i+1] != '#'){
                     graph.addEdge(i,i+1);
                 }
